@@ -20,6 +20,7 @@ local Mount = ns.reward.Mount
 local Pet = ns.reward.Pet
 local Toy = ns.reward.Toy
 local Transmog = ns.reward.Transmog
+local Reputation = ns.reward.Reputationm
 
 local Path = ns.poi.Path
 local POI = ns.poi.POI
@@ -146,7 +147,8 @@ map.nodes[35657489] = Rare({ -- get path
     quest = 78619, -- One Time Kill
     rewards = {
         Achievement({id = 40435, criteria = 68210}), --
-        Transmog({item = 223367, slot = L['leather']}) -- Cuffs of the Titancap
+        Transmog({item = 223367, slot = L['leather']}), -- Cuffs of the Titancap
+        Transmog({item = 223366, slow = L['mail']}) -- Bracers of the Titancap
     },
     pois = {
         Path({
@@ -245,7 +247,7 @@ map.nodes[30905239] = Rare({
 
 map.nodes[56833477] = Rare({
     id = 219263,
-    quest = 81894, -- One Time Kill
+    quest = 81894, -- One Time Kill (gave 150 rep)
     rewards = {
         Achievement({id = 40435, criteria = 68213}),
         Transmog({item = 223341, slot = L['cloth']}), -- Warphorn's Resilient Mane
